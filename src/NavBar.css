@@ -1,30 +1,94 @@
-.navbar{
-    width:100%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 
-.productOptions ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
+.productOptions ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-indent: 3em;
+  padding-top: 1.05em;
+  font-family: "Helvetica Neue";
 }
 
-.functionalities{
-    display: flex;
-    flex-direction:row;
-    padding: 12 12 12 12;
+.button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
 }
 
-.account{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.button:hover {
+  color: #007bff;
 }
 
-.basket{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.button:after {
+  background: transparent;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  background: #007bff;
+  width: 0;
+}
+.button:active:after {
+  left: 0;
+  width: 100%;
+}
+
+.functionalities {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-content: space-between;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  gap: 34px;
+  font-family: "Helvetica Neue";
+  font-weight: "Regular";
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+.account:hover,
+.basket:hover,
+svg:hover {
+  color: #007bff;
+  fill: #007bff;
+}
+
+.account:active,
+.basket:active,
+svg:active {
+  color: #0069d9;
+  fill: #0069d9;
+}
+
+.account,
+.basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Helvetica Neue";
+}
+
+.account p,
+.basket p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: "Helvetica Neue";
 }
