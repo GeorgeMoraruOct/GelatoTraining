@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-indent: 3em;
-  padding-top: 1.05em;
+  padding-top: 1em;
   font-family: "Helvetica Neue";
 }
 
@@ -80,6 +80,7 @@ svg:active {
 
 .account,
 .basket {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +89,74 @@ svg:active {
 
 .account p,
 .basket p {
+  cursor: pointer;
   margin-top: 8px;
   margin-bottom: 8px;
   font-family: "Helvetica Neue";
+}
+
+.toggleMenu {
+  display: none;
+  font-size: 20px;
+  font-family: "Helvetica Neue";
+  font-weight: "Condensed Bold";
+}
+
+.productOptions {
+  text-align: start;
+}
+
+.menu {
+  margin: 0 30px 0 0;
+}
+
+.menu li {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  .logo {
+    display: none;
+  }
+  .toggleMenu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: flex-start;
+    text-transform: uppercase;
+  }
+  .toggleMenu1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu li{
+    margin: 0 0 3px 0;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .menu button {
+    text-transform: uppercase;
+    font-family: "Helvetica Neue";
+    font-weight: "Condensed Bold";
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
 }
