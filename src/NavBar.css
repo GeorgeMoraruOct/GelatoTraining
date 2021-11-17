@@ -8,6 +8,10 @@ body{
   align-content: space-between;
 }
 
+.homeButton{
+  display: none;
+}
+
 .productOptions ul {
   list-style-type: none;
   display: flex;
@@ -16,6 +20,11 @@ body{
   text-indent: 3em;
   padding-top: 1em;
   font-family: "Helvetica Neue";
+  color:#343A40
+}
+
+.functionalitiesMenu{
+  display: none;
 }
 
 .button {
@@ -59,7 +68,8 @@ body{
   padding-right: 1em;
   gap: 34px;
   font-family: "Helvetica Neue";
-  font-weight: "Regular";
+  font-weight: 1;
+  color:#343A40
 }
 
 svg {
@@ -102,7 +112,7 @@ svg:active {
   display: none;
   font-size: 20px;
   font-family: "Helvetica Neue";
-  font-weight: "Condensed Bold";
+  color:#343A40
 }
 
 .productOptions {
@@ -127,32 +137,53 @@ svg:active {
 }
 
 @media only screen and (max-width: 900px) {
-  .logo {
-    display: none;
+  .navbar{
+    display: flex;
+    justify-content: space-around;
   }
+  
+  .logo {
+    display: flex;
+    order: 2;
+    justify-content: center;
+    width: 100%;
+  }
+
   .mobileElements{
     display:block;
     text-align: center;
+    padding: 0 0.5em 0 0;
   }
+
   .mobileElements hr{
-    width: 70%;
+    width: 80%;
+    background-color: #CDD1D4;
+    border: none;
+    height: 1px;
   }
+
   .toggleMenu {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     align-items: flex-start;
-    text-transform: uppercase;
   }
+
+  .toggleMenu1 p{
+    margin: 5px;
+  }
+
   .toggleMenu1{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
   }
 
   .menu {
+    order:1;
     height: 100%;
     width: 0;
+    font-family: Helvetica;
     position:fixed;
     z-index: 1;
     top: 0;
@@ -161,36 +192,91 @@ svg:active {
     overflow-x: hidden;
     transition: 0.5s;
     display: block;
+    text-transform: uppercase;
+    
   }
 
   .menu li{
     margin: 0 0 3px 0;
     display: flex;
+    font-weight: bold; 
+  }
+
+  .functionalities{
+    order: 3;
   }
 
   .menu ul {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    padding-left: 0;
+    padding: 0 1em 0 1em;
     gap: 30px;
+    color:#343A40
   }
 
   .menu button {
     text-transform: uppercase;
-    font-family: "Helvetica Neue";
-    font-weight: "Condensed Bold";
+    font-family: "HelveticaNeue-CondensedBold";
     align-self: flex-end;
+    color:#343A40
   }
+
   .closeButton{
     background-color: white;
     width: 100%;
-    color: blue;
+    color: #cdd1d4;
     border: none;
     font-size: 2rem;
     text-align: right;
   }
+
   #toggle:checked + .menu {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .account{
+    display: none;
+  }
+
+  .functionalitiesMenu{
+    display: flex;
+    flex-direction: column;
+    }
+
+  .functionalitiesMenu p{
+    text-transform: uppercase;
+    font-family: "HelveticaNeue-CondensedBold";
+    
+  }
+
+  .functionalitiesMenu hr{
+    width: 70%;
+  }
+
+  .basketMenu, .accountMenu{
+    padding: 0 1em 0 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu ul {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu li{
+    align-self: stretch;
+    display: flex;
+    font-weight: bold; 
+  }
+
+  .basketMenu p, .accountMenu p{
+    margin: 21px;
   }
 }
