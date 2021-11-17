@@ -1,33 +1,113 @@
-.footer{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+.footer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
-.footerBody{
-    background-color: #343A40;
-    display: flex;
-    flex-direction: row;
-    padding-top: 56px;
-    padding-bottom: 40px;
+.footerBody {
+  background-color: #343a40;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  color: white;
 }
 
-.footerTitle{
-    font-family: "HelveticaNeue-CondensedBold";
-    color: white;
-    text-decoration: underline;
-    font-size: 24px;
+.info,
+.findUs,
+.about,
+.newsletter {
+  display: flex;
+  flex-direction: column;
 }
 
-.copyright{
-    text-align: center;
-    background-color: white;
+.info p,
+.findUs p,
+.about p,
+.newsletter p {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.copyright p{
-    margin-top: 23px;
-    margin-bottom: 22px;
-    font-family: "Helvetica Neue";
-    color: #343A40;
-    font-size: 16px;
+.footerItem {
+  font-size: 16px;
+  font-family: "Helvetica Neue";
+}
+
+.footerItem:hover {
+  cursor: pointer;
+}
+
+.footerTitle {
+  margin-right: auto;
+  font-family: "HelveticaNeue-CondensedBold";
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+  border-bottom: 2px dashed #32557f;
+  padding-bottom: 3px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+}
+
+.email {
+  width: 215px;
+  border-width: 1px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-color: #ced4da;
+}
+
+.subscribeBtn {
+  width: 94px;
+  height: 38px;
+  font-size: 16px;
+  background-color: white;
+  color: #6c757d;
+  border-width: 1px;
+  border-color: #6c757d;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: "HelveticaNeue-CondensedBold";
+}
+
+.subscribeBtn:hover {
+  background-color: #5a6268;
+  cursor: pointer;
+  color: white;
+  border-width: 3px;
+  border-color: #a8adb1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.subscribeBtn:disabled {
+  background-color: #b0b6ba;
+  color: white;
+  border: none;
+}
+
+.subscribeBtn:active {
+  background-color: #5a6268;
+  cursor: pointer;
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #fafcfc;
+}
+
+.copyright p {
+  margin-top: 23px;
+  margin-bottom: 22px;
+  font-family: "Helvetica Neue";
+  color: #343a40;
+  font-size: 16px;
 }
