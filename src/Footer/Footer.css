@@ -47,7 +47,7 @@
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
-  border-bottom: 2px dashed #32557f;
+  border-bottom: 2px solid white;
   padding-bottom: 3px;
 }
 
@@ -72,6 +72,8 @@
   color: #6c757d;
   border-width: 1px;
   border-color: #6c757d;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   font-family: "HelveticaNeue-CondensedBold";
@@ -79,10 +81,12 @@
 
 .subscribeBtn:hover {
   background-color: #5a6268;
+  border-width: 1px;
+  border-color: #a8adb1;
   cursor: pointer;
   color: white;
-  border-width: 3px;
-  border-color: #a8adb1;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -91,12 +95,6 @@
   background-color: #b0b6ba;
   color: white;
   border: none;
-}
-
-.subscribeBtn:active {
-  background-color: #5a6268;
-  cursor: pointer;
-  color: white;
 }
 
 .copyright {

@@ -1,9 +1,10 @@
 import "./Card.css";
+import Pistachio from "./images/Pistachio.png";
 function Card(props){
     return(
         <div className="cardContainer"> 
             <div className="imageContainer">
-                <img src="/images/Pistachio.png" alt="No pic"/>
+                <img src={Pistachio} alt="No pic"/>
             </div>
             <div className="detailsContainer">
                 <h3>Pistachio Ice Cream</h3>

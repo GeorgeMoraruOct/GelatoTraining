@@ -1,11 +1,12 @@
 .cardContainer{
-    width: 40%;
-    padding: 1em 1em 1em 1em;
+    width: 19rem;
     border: 1px solid #E0E0E0;
     opacity: 1;
     border-radius: 5px;
     font-family: "Helvetica Neue";
     font-size: 16px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .imageContainer{
@@ -13,13 +14,18 @@
     height: 45%;
 }
 
-.detailsContainer{
-    width: auto;
-    height: 55%;
-    font-size: 15px;
+.imageContainer img{
+    width: 19rem;
 }
 
-button{
+.detailsContainer{
+    width: auto;
+    height: 50%;
+    font-size: 15px;
+    padding: 1em 1em 1em 1em;
+}
+
+.buyContainer{
     border-radius: 10px;
     width: 9em;
     height: 3em;

@@ -1,5 +1,7 @@
 import "./TopCards.css";
-
+import Gelato from "./images/Group1443.png";
+import Donut from "./images/Group1444.png";
+import Family from "./images/Group1445.png";
 
 function TopCards(props) {
     const style = {
@@ -9,16 +11,15 @@ function TopCards(props) {
       <div className= "topCard">
         <div className="info1">
           <p>Ice Cream & Gelato</p>
-          <button>Explore Options</button>
+          <button className="itemButton">Explore Options</button>
         </div>
         <div className="info2">
-        <img src= "/images/Group1443.png" alt="Ice Cream & Gelato"/>
           <p>Delicious Donuts</p>
-          <button>Explore Options</button>
+          <button className="itemButton">Explore Options</button>
         </div>
         <div className="info3">
           <p>Family/Corporate</p>
-          <button>Explore Options</button>
+          <button className="itemButton">Explore Options</button>
         </div>
       </div>
     
