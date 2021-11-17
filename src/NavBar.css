@@ -1,4 +1,4 @@
-body{
+body {
   background-color: white;
 }
 .navbar {
@@ -6,9 +6,10 @@ body{
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  align-items: center;
 }
 
-.homeButton{
+.homeButton {
   display: none;
 }
 
@@ -20,10 +21,10 @@ body{
   text-indent: 3em;
   padding-top: 1em;
   font-family: "Helvetica Neue";
-  color:#343A40
+  color: #343a40;
 }
 
-.functionalitiesMenu{
+.functionalitiesMenu {
   display: none;
 }
 
@@ -51,12 +52,17 @@ body{
   display: block;
   height: 1px;
   position: absolute;
-  background: #007bff;
+  background: #0069d9;
+  color: #0069d9;
   width: 0;
 }
 .button:active:after {
   left: 0;
   width: 100%;
+}
+
+.button:active {
+  color: #0069d9;
 }
 
 .functionalities {
@@ -69,7 +75,6 @@ body{
   gap: 34px;
   font-family: "Helvetica Neue";
   font-weight: 1;
-  color:#343A40
 }
 
 svg {
@@ -78,15 +83,13 @@ svg {
 }
 
 .account:hover,
-.basket:hover,
-svg:hover {
+.basket:hover {
   color: #007bff;
   fill: #007bff;
 }
 
 .account:active,
-.basket:active,
-svg:active {
+.basket:active {
   color: #0069d9;
   fill: #0069d9;
 }
@@ -98,6 +101,8 @@ svg:active {
   flex-direction: column;
   align-items: center;
   font-family: "Helvetica Neue";
+  fill: #343a40;
+  color: #343a40;
 }
 
 .account p,
@@ -106,13 +111,14 @@ svg:active {
   margin-top: 8px;
   margin-bottom: 8px;
   font-family: "Helvetica Neue";
+  font-size: 16px;
 }
 
 .toggleMenu {
   display: none;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Helvetica Neue";
-  color:#343A40
+  color: #343a40;
 }
 
 .productOptions {
@@ -132,16 +138,25 @@ svg:active {
   display: none;
 }
 
-.mobileElements{
+.mobileElements {
   display: none;
 }
 
+.menuIcon {
+  font-size: x-large;
+}
+
+.logoIcon {
+  width: 120px;
+  height: 75px;
+}
+
 @media only screen and (max-width: 900px) {
-  .navbar{
+  .navbar {
     display: flex;
     justify-content: space-around;
   }
-  
+
   .logo {
     display: flex;
     order: 2;
@@ -149,15 +164,15 @@ svg:active {
     width: 100%;
   }
 
-  .mobileElements{
-    display:block;
+  .mobileElements {
+    display: block;
     text-align: center;
     padding: 0 0.5em 0 0;
   }
 
-  .mobileElements hr{
+  .mobileElements hr {
     width: 80%;
-    background-color: #CDD1D4;
+    background-color: #cdd1d4;
     border: none;
     height: 1px;
   }
@@ -169,22 +184,22 @@ svg:active {
     align-items: flex-start;
   }
 
-  .toggleMenu1 p{
+  .toggleMenu1 p {
     margin: 5px;
   }
 
-  .toggleMenu1{
-    display:flex;
+  .toggleMenu1 {
+    display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
   }
 
   .menu {
-    order:1;
+    order: 1;
     height: 100%;
     width: 0;
-    font-family: Helvetica;
-    position:fixed;
+    font-family: "Helvetica Neue";
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
@@ -193,16 +208,16 @@ svg:active {
     transition: 0.5s;
     display: block;
     text-transform: uppercase;
-    
+    color: #343a40;
   }
 
-  .menu li{
+  .menu li {
     margin: 0 0 3px 0;
     display: flex;
-    font-weight: bold; 
+    font-weight: bold;
   }
 
-  .functionalities{
+  .functionalities {
     order: 3;
   }
 
@@ -212,17 +227,17 @@ svg:active {
     align-content: flex-start;
     padding: 0 1em 0 1em;
     gap: 30px;
-    color:#343A40
+    color: #343a40;
   }
 
   .menu button {
     text-transform: uppercase;
     font-family: "HelveticaNeue-CondensedBold";
     align-self: flex-end;
-    color:#343A40
+    color: #343a40;
   }
 
-  .closeButton{
+  .closeButton {
     background-color: white;
     width: 100%;
     color: #cdd1d4;
@@ -237,26 +252,30 @@ svg:active {
 }
 
 @media only screen and (max-width: 450px) {
-  .account{
+  .account {
     display: none;
   }
 
-  .functionalitiesMenu{
+  .functionalitiesMenu {
     display: flex;
     flex-direction: column;
-    }
+  }
 
-  .functionalitiesMenu p{
+  .functionalitiesMenu p {
     text-transform: uppercase;
     font-family: "HelveticaNeue-CondensedBold";
-    
+    color: #343a40;
   }
 
-  .functionalitiesMenu hr{
-    width: 70%;
+  .functionalitiesMenu hr {
+    width: 80%;
+    background-color: #cdd1d4;
+    border: none;
+    height: 1px;
   }
 
-  .basketMenu, .accountMenu{
+  .basketMenu,
+  .accountMenu {
     padding: 0 1em 0 1em;
     display: flex;
     flex-direction: row;
@@ -270,13 +289,19 @@ svg:active {
     align-items: flex-start;
   }
 
-  .menu li{
+  .menu li {
     align-self: stretch;
     display: flex;
-    font-weight: bold; 
+    font-weight: bold;
   }
 
-  .basketMenu p, .accountMenu p{
+  .basketMenu p,
+  .accountMenu p {
     margin: 21px;
+  }
+
+  .logoIcon{
+    width: 120px;
+    height: 64px;
   }
 }

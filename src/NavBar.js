@@ -2,31 +2,30 @@ import "./NavBar.css";
 import logo from "./images/Group1327.svg";
 // import accountLogo from './images/Group1349.svg'
 // import basketLogo from './images/Group1442.svg'
-function openNav(){
-  document.getElementById("menuMobile").style.width="50%"
+function openNav() {
+  document.getElementById("menuMobile").style.width = "70%";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-  document.getElementById("close").style.display="block";
+  document.getElementById("close").style.display = "block";
 }
 
-function closeNav(){
-  document.getElementById("menuMobile").style.width="0"
+function closeNav() {
+  document.getElementById("menuMobile").style.width = "0";
   document.body.style.backgroundColor = "white";
-  document.getElementById("close").style.display="none";
+  document.getElementById("close").style.display = "none";
 }
 
-function changeNav(){
-  if (window.innerWidth > 900)
-    closeNav();
+function changeNav() {
+  //if (window.innerWidth > 900) closeNav();
 }
 
 function Navbar() {
-  const style={
-    display:'none'
+  const style = {
+    display: "none",
   };
   return (
     <div className="navbar" onClick={changeNav}>
       <div className="logo">
-        <img src={logo} alt="Gelato and Donuts" />
+        <img className="logoIcon" src={logo} alt="Gelato and Donuts" />
       </div>
       <div className="productOptions">
         <div className="toggleMenu">
@@ -40,9 +39,17 @@ function Navbar() {
         </div>
         <div id="menuMobile" className="menu">
           <div className="mobileElements">
-            <button id="close" className="closeButton" onClick={closeNav} style={style} onclick="closeNav()">&times;</button>
+            <button
+              id="close"
+              className="closeButton"
+              onClick={closeNav}
+              style={style}
+              onclick="closeNav()"
+            >
+              &times;
+            </button>
             <h2>Menu</h2>
-            <hr/>
+            <hr />
           </div>
           <ul>
             <li className="homeButton">
@@ -62,7 +69,7 @@ function Navbar() {
             </li>
           </ul>
           <div className="functionalitiesMenu">
-            <hr/>
+            <hr />
             <div className="accountMenu">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <g fill="current">
@@ -72,12 +79,12 @@ function Navbar() {
               {/* <img src={accountLogo} alt="Account Button"/> */}
               <p>Account</p>
             </div>
-            <hr/>
+            <hr />
             <div className="basketMenu">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <g fill="current">
-                <path d="M12,2a6,6,0,0,1,6,6V9h4v2H20.833l-.757,9.083a1,1,0,0,1-1,.917H4.92a1,1,0,0,1-1-.917L3.166,11H2V9H6V8a6,6,0,0,1,6-6Zm6.826,9H5.173l.667,8H18.159ZM13,13v4H11V13ZM9,13v4H7V13Zm8,0v4H15V13ZM12,4A4,4,0,0,0,8.005,7.8L8,8V9h8V8a4,4,0,0,0-3.8-3.995Z" />
-              </g>
+                <g fill="current">
+                  <path d="M12,2a6,6,0,0,1,6,6V9h4v2H20.833l-.757,9.083a1,1,0,0,1-1,.917H4.92a1,1,0,0,1-1-.917L3.166,11H2V9H6V8a6,6,0,0,1,6-6Zm6.826,9H5.173l.667,8H18.159ZM13,13v4H11V13ZM9,13v4H7V13Zm8,0v4H15V13ZM12,4A4,4,0,0,0,8.005,7.8L8,8V9h8V8a4,4,0,0,0-3.8-3.995Z" />
+                </g>
               </svg>
               {/* <img src={basketLogo} alt="Basket Button"/> */}
               <p>Basket</p>
