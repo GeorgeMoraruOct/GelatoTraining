@@ -1,3 +1,6 @@
+body{
+  background-color: white;
+}
 .navbar {
   width: 100%;
   display: flex;
@@ -119,7 +122,7 @@ svg:active {
   display: none;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 900px) {
   .logo {
     display: none;
   }
@@ -137,11 +140,22 @@ svg:active {
   }
 
   .menu {
+    height: 100%;
+    width: 0;
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
     display: block;
   }
 
   .menu li{
     margin: 0 0 3px 0;
+    
   }
 
   .menu ul {
@@ -154,8 +168,16 @@ svg:active {
     text-transform: uppercase;
     font-family: "Helvetica Neue";
     font-weight: "Condensed Bold";
+    font-size: 1rem;
   }
-
+  .closeButton{
+    background-color: white;
+    width: 1em;
+    height: 1em;
+    color: #CDD1D4;
+    border: none;
+    font-size: 30px;
+  }
   #toggle:checked + .menu {
     display: block;
   }

@@ -2,8 +2,22 @@ import "./NavBar.css";
 import logo from "./images/Group1327.svg";
 // import accountLogo from './images/Group1349.svg'
 // import basketLogo from './images/Group1442.svg'
+function openNav(){
+  document.getElementById("menuMobile").style.width="50%"
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("close").style.display="block";
+}
+
+function closeNav(){
+  document.getElementById("menuMobile").style.width="0"
+  document.body.style.backgroundColor = "white";
+  document.getElementById("close").style.display="none";
+}
 
 function Navbar() {
+  const style={
+    display:'none'
+  };
   return (
     <div className="navbar">
       <div className="logo">
@@ -11,7 +25,7 @@ function Navbar() {
       </div>
       <div className="productOptions">
         <div className="toggleMenu">
-          <div className="toggleMenu1">
+          <div className="toggleMenu1" onClick={openNav}>
             <label className="menuIcon" for="toggle">
               &#9776;
             </label>
@@ -19,8 +33,11 @@ function Navbar() {
             <input type="checkbox" id="toggle" />
           </div>
         </div>
-        <div className="menu">
+        <div id="menuMobile" className="menu">
           <ul>
+            <li>
+              <button id="close" className="closeButton" onClick={closeNav} style={style} onclick="closeNav()">&times;</button>
+            </li>
             <li>
               <button className="button">Gelato</button>
             </li>
