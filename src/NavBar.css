@@ -122,9 +122,20 @@ svg:active {
   display: none;
 }
 
+.mobileElements{
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
   .logo {
     display: none;
+  }
+  .mobileElements{
+    display:block;
+    text-align: center;
+  }
+  .mobileElements hr{
+    width: 70%;
   }
   .toggleMenu {
     display: flex;
@@ -148,19 +159,20 @@ svg:active {
     left: 0;
     background-color: #fff;
     overflow-x: hidden;
-    padding-top: 60px;
     transition: 0.5s;
     display: block;
   }
 
   .menu li{
     margin: 0 0 3px 0;
-    
+    display: flex;
   }
 
   .menu ul {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
+    padding-left: 0;
     gap: 30px;
   }
 
@@ -168,15 +180,15 @@ svg:active {
     text-transform: uppercase;
     font-family: "Helvetica Neue";
     font-weight: "Condensed Bold";
-    font-size: 1rem;
+    align-self: flex-end;
   }
   .closeButton{
     background-color: white;
-    width: 1em;
-    height: 1em;
-    color: #CDD1D4;
+    width: 100%;
+    color: blue;
     border: none;
-    font-size: 30px;
+    font-size: 2rem;
+    text-align: right;
   }
   #toggle:checked + .menu {
     display: block;

@@ -34,10 +34,12 @@ function Navbar() {
           </div>
         </div>
         <div id="menuMobile" className="menu">
+          <div className="mobileElements">
+            <button id="close" className="closeButton" onClick={closeNav} style={style} onclick="closeNav()">&times;</button>
+            <h1>Menu</h1>
+            <hr/>
+          </div>
           <ul>
-            <li>
-              <button id="close" className="closeButton" onClick={closeNav} style={style} onclick="closeNav()">&times;</button>
-            </li>
             <li>
               <button className="button">Gelato</button>
             </li>
