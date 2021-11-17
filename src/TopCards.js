@@ -5,7 +5,7 @@ function TopCards() {
     };
     return (
 
-<TopCards style={{ width: '18rem' }}>
+<TopCards style={{ width: '455px' }}>
   <TopCards.Img variant="top" src="holder.js/100px180" />
   <TopCards.Body>
     <TopCards.Title>Card Title</TopCards.Title>
