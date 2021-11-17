@@ -235,7 +235,6 @@ svg {
 
   .menu button {
     text-transform: uppercase;
-    font-family: "HelveticaNeue-CondensedBold";
     align-self: flex-end;
     color: #343a40;
   }

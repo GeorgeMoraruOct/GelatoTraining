@@ -1,19 +1,28 @@
+import "./TopCards.css";
 
-function TopCards() {
+
+function TopCards(props) {
     const style = {
       display: "none",
     };
     return (
+      <div className= "topCard">
+        <div className="info1">
+          <p>Ice Cream & Gelato</p>
+          <button>Explore Options</button>
+        </div>
+        <div className="info2">
+        <img src= "/images/Group1443.png" alt="Ice Cream & Gelato"/>
+          <p>Delicious Donuts</p>
+          <button>Explore Options</button>
+        </div>
+        <div className="info3">
+          <p>Family/Corporate</p>
+          <button>Explore Options</button>
+        </div>
+      </div>
+    
+    )
+  }
+  export default TopCards;    
 
-<TopCards style={{ width: '455px' }}>
-  <TopCards.Img variant="top" src="holder.js/100px180" />
-  <TopCards.Body>
-    <TopCards.Title>Card Title</TopCards.Title>
-    <TopCards.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </TopCards.Text>
-    <button> Explore Option </button>
-  </TopCards.Body>
-</TopCards>)};
-export default TopCards;

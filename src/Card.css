@@ -1,0 +1,31 @@
+.cardContainer{
+    width: 40%;
+    padding: 1em 1em 1em 1em;
+    border: 1px solid #E0E0E0;
+    opacity: 1;
+    border-radius: 5px;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+}
+
+.imageContainer{
+    width: auto;
+    height: 45%;
+}
+
+.detailsContainer{
+    width: auto;
+    height: 55%;
+    font-size: 15px;
+}
+
+button{
+    border-radius: 10px;
+    width: 9em;
+    height: 3em;
+    background-color: #007BFF;
+    color: white;
+    border: 0;
+    padding: 0.5em 1em 0.5em 1em;
+
+}
