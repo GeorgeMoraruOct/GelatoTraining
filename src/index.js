@@ -10,10 +10,7 @@ import Home from './Home'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Navbar/>
-    <TopCards/>
-    <Card/>
-    <Footer/>
+    <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );

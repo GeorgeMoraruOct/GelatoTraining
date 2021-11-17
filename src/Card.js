@@ -7,9 +7,9 @@ function Card(props){
                 <img src={Pistachio} alt="No pic"/>
             </div>
             <div className="detailsContainer">
-                <h3>Pistachio Ice Cream</h3>
-                <p>Treat yourself to ice cream infused</p>
-                <h3>$ 2.50</h3>
+                <h3>{props.name}</h3>
+                <p>{props.description}</p>
+                <h3>{props.price}</h3>
                 <button className="buyContainer">Add to basket</button>
             </div>
         </div>
