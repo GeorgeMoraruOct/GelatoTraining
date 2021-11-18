@@ -1,7 +1,7 @@
 import "./TopCards.css";
-import Gelato from "./images/Group1443.png";
-import Donut from "./images/Group1444.png";
-import Family from "./images/Group1445.png";
+import Gelato from "../images/Group1443.png";
+import Donut from "../images/Group1444.png";
+import Family from "../images/Group1445.png";
 
 function TopCards(props) {
   const style = {

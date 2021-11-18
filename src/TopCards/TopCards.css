@@ -34,15 +34,15 @@ body {
 }
 
 .info1 {
-  background-image: url("./images/Group1443.png");
+  background-image: url("/src/images/Group1443.png");
 }
 
 .info2 {
-  background-image: url("./images/Group1444.png");
+  background-image: url("/src/images/Group1444.png");
 }
 
 .info3 {
-  background-image: url("./images/Group1445.png");
+  background-image: url("/src/images/Group1445.png");
 }
 
 .itemButton {

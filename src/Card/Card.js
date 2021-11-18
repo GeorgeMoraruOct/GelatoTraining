@@ -1,5 +1,5 @@
 import "./Card.css";
-import Pistachio from "./images/Pistachio.png";
+import Pistachio from "../images/Pistachio.png";
 function Card(props) {
   return (
     <div className="cardContainer">

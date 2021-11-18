@@ -1,13 +1,13 @@
-import Navbar from "./NavBar";
-import TopCards from "./TopCards";
-import Footer from "./Footer/Footer";
-import Card from "./Card";
-import Title from "./Title";
+import Navbar from "../NavBar/NavBar";
+import TopCards from "../TopCards/TopCards";
+import Footer from "../Footer/Footer";
+import Card from "../Card/Card";
+import CategoryTitle from "../CategoryTitle/CategoryTitle";
 import "./Home.css";
-import Pistachio from "./images/Pistachio.png";
-import Watermelon from "./images/Watermelon.png";
-import Watermelon2 from "./images/Watermelon2.png";
-import Strawberry from "./images/Strawberry.png";
+import Pistachio from "../images/Pistachio.png";
+import Watermelon from "../images/Watermelon.png";
+import Watermelon2 from "../images/Watermelon2.png";
+import Strawberry from "../images/Strawberry.png";
 function Home() {
   const icecream = [
     {
@@ -44,7 +44,7 @@ function Home() {
       <Navbar />
 
       <TopCards />
-      <Title />
+      <CategoryTitle />
 
       <div className="cards">
         {icecream.map((ice) => {

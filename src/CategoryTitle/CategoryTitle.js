@@ -1,11 +1,11 @@
-import "./Title.css";
+import "./CategoryTitle.css";
 
-function Title() {
+function CategoryTitle() {
   const style = {
     display: "none",
   };
   return (
-    <div className="title">
+    <div className="categoryTitle">
       <div className="IceCream">
         <p>Top Selling Ice Cream & Gelato</p>
       </div>
@@ -26,4 +26,4 @@ function Title() {
   );
 }
 
-export default Title;
+export default CategoryTitle;

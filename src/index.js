@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Navbar from "./NavBar";
-import Body from "./Body";
+import Navbar from "./NavBar/NavBar";
 import Footer from "./Footer/Footer";
-import TopCards from "./TopCards";
-import Card from "./Card";
-import Home from "./Home";
+import TopCards from "./TopCards/TopCards";
+import Card from "./Card/Card";
+import Home from "./Home/Home";
 
 ReactDOM.render(
   <React.StrictMode>

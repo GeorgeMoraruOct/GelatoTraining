@@ -1,5 +1,5 @@
 import "./NavBar.css";
-import logo from "./images/Group1327.svg";
+import logo from "../images/Group1327.svg";
 // import accountLogo from './images/Group1349.svg'
 // import basketLogo from './images/Group1442.svg'
 function openNav() {
