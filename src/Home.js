@@ -2,6 +2,7 @@ import Navbar from "./NavBar";
 import TopCards from "./TopCards";
 import Footer from "./Footer/Footer";
 import Card from "./Card";
+import Title from "./Title";
 import "./Home.css";
 import Pistachio from "./images/Pistachio.png";
 import Watermelon from "./images/Watermelon.png";
@@ -39,9 +40,12 @@ function Home() {
     },
   ];
   return (
-    <>
+    <div>
       <Navbar />
+
       <TopCards />
+      <Title />
+
       <div className="cards">
         {icecream.map((ice) => {
           return (
@@ -55,7 +59,7 @@ function Home() {
         })}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -28,24 +28,21 @@ body {
   font-family: "HelveticaNeue-CondensedBold";
   color: white;
   font-size: 24px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .info1 {
   background-image: url("./images/Group1443.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .info2 {
   background-image: url("./images/Group1444.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .info3 {
   background-image: url("./images/Group1445.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .itemButton {
@@ -63,4 +60,28 @@ body {
 .itemButton:hover {
   color: #343a40;
   background: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .info1,
+  .info2,
+  .info3 {
+    width: 255px;
+    height: 320px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .info1,
+  .info2,
+  .info3 {
+    height: 320px;
+    flex: 0 0 255px;
+  }
+
+  .topCard {
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
 }

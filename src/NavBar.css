@@ -10,6 +10,7 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
+  padding-left: 17px;
 }
 
 .homeButton {
@@ -69,18 +70,18 @@ body {
 }
 
 .functionalities {
+  padding-right: 17px;
   display: flex;
   flex-direction: row;
   margin-left: auto;
   align-content: space-between;
   padding-top: 0.5em;
-  padding-right: 1em;
   gap: 34px;
   font-family: "Helvetica Neue";
   font-weight: 1;
 }
 
-svg {
+.functionalSvg {
   width: 24px;
   height: 24px;
 }
@@ -197,6 +198,10 @@ svg {
     align-items: center;
   }
 
+  .button {
+    font-family: "HelveticaNeue-CondensedBold";
+  }
+
   .menu {
     order: 1;
     height: 100%;
@@ -218,6 +223,7 @@ svg {
     margin: 0 0 3px 0;
     display: flex;
     font-weight: bold;
+    font-family: "HelveticaNeue-CondensedBold";
   }
 
   .functionalities {
@@ -295,6 +301,10 @@ svg {
     align-self: stretch;
     display: flex;
     font-weight: bold;
+  }
+
+  .button {
+    font-family: "HelveticaNeue-CondensedBold";
   }
 
   .basketMenu p,

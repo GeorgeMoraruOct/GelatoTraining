@@ -42,13 +42,13 @@
 }
 
 .footerTitle {
+  color: white;
   margin-right: auto;
   font-family: "HelveticaNeue-CondensedBold";
   text-transform: uppercase;
   font-size: 24px;
   text-decoration: none;
-  border-bottom: 2px solid white;
-  padding-bottom: 3px;
+  border-bottom: 1px solid white;
 }
 
 .subscribe {
@@ -97,6 +97,10 @@
   border: none;
 }
 
+.subscribeBtn:active {
+  border: 3px solid #a8adb1;
+}
+
 .copyright {
   text-align: center;
   background-color: #fafcfc;
@@ -108,4 +112,90 @@
   font-family: "Helvetica Neue";
   color: #343a40;
   font-size: 16px;
+}
+
+.newsletterTablet {
+  display: none;
+}
+
+.footerBodyMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .newsletter {
+    display: none;
+  }
+
+  .newsletterTablet {
+    background-color: #0069d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+
+  .newsletterTablet p {
+    margin: auto;
+  }
+
+  .footerBodyMobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .newsletterTablet {
+    background-color: #0069d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+  }
+
+  .newsletterTablet p {
+    margin: auto;
+  }
+
+  .footerBody {
+    display: none;
+  }
+
+  .info,
+  .about,
+  .findUs {
+    background-color: #343a40;
+    display: flex;
+    flex-direction: row;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerBodyMobile p {
+    margin-right: 0;
+    font-size: 18px;
+  }
+
+  .dropDownArrow {
+    width: 32px;
+    height: 32px;
+    fill: white;
+    transform: rotate(-90deg);
+  }
+
+  .footerBodyMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
 }

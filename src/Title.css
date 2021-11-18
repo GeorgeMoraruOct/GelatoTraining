@@ -1,0 +1,55 @@
+.title {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-family: "HelveticaNeue-CondensedBold";
+  color: #343a40;
+  font-size: 24px;
+  padding-top: 60px;
+  justify-content: space-between;
+  padding-bottom: 27px;
+}
+.IceCream p,
+.Explore p {
+  margin: 0;
+}
+.IceCream {
+  padding-left: 17px;
+}
+
+.Explore {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 17px;
+}
+
+.TitleTablet {
+  display: none;
+}
+
+.ArrowSvg {
+  width: 24px;
+  height: 24px;
+  fill: #343a40;
+}
+
+@media only screen and (max-width: 900px) {
+  .TitleTablet {
+    display: block;
+  }
+
+  .TitleDesktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .Explore {
+    display: none;
+  }
+}
