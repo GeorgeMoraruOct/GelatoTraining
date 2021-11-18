@@ -23,7 +23,7 @@ function Navbar() {
     display: "none",
   };
   return (
-    
+
     <div className="navbar" onClick={changeNav}>
       <div className="logo">
         <img className="logoIcon" src={logo} alt="Gelato and Donuts" />
@@ -116,7 +116,7 @@ function Navbar() {
       </div>
     </div>
   );
-  
+
 }
 
 export default Navbar;
